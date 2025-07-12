@@ -97,9 +97,8 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
       }}      style={{
         minWidth: "320px",
         maxWidth: "900px",
-      }}
-      className={cn(
-        "relative z-[60] mx-auto hidden w-full flex-row items-center justify-between self-start rounded-full bg-black/20 backdrop-blur-sm border border-white/10 px-6 py-3 lg:flex",
+      }}      className={cn(
+        "relative z-[60] mx-auto hidden w-full flex-row items-center justify-between self-start rounded-full bg-black/20 backdrop-blur-sm border border-white/10 px-6 h-14 lg:flex",
         visible && "bg-black/40 border-white/20",
         className,
       )}
@@ -157,7 +156,7 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
         stiffness: 200,
         damping: 50,
       }}      className={cn(
-        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-black/20 backdrop-blur-sm border border-white/10 px-4 py-3 lg:hidden rounded-3xl",
+        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-black/20 backdrop-blur-sm border border-white/10 px-4 lg:hidden rounded-3xl h-14",
         visible && "bg-black/40 border-white/20",
         className,
       )}
@@ -174,7 +173,7 @@ export const MobileNavHeader = ({
   return (
     <div
       className={cn(
-        "flex w-full flex-row items-center justify-between",
+        "flex w-full flex-row items-center justify-between h-full",
         className,
       )}
     >
@@ -221,17 +220,16 @@ export const MobileNavToggle = ({
 };
 
 export const NavbarLogo = () => {
-  return (    <a
+  return (
+    <a
       href="#"
-      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-base font-normal"
+      className="relative z-20 mr-4 flex items-center px-2 h-full"
     >
       <img
         src="/logikeon_no_back.png"
         alt="Logikeon"
-        width={30}
-        height={30}
+        className="h-32 w-auto object-contain"
       />
-      <span className="font-semibold text-white">Logikeon</span>
     </a>
   );
 };
@@ -253,7 +251,7 @@ export const NavbarButton = ({
   | React.ComponentPropsWithoutRef<"a">
   | React.ComponentPropsWithoutRef<"button">
 )) => {  const baseStyles =
-    "px-4 py-2 rounded-md bg-white button bg-white text-black text-base font-bold relative cursor-pointer hover:-translate-y-0.5 hover:bg-gray-200 transition duration-200 inline-block text-center";
+    "px-3 py-1.5 rounded-md bg-white text-black text-sm font-medium relative cursor-pointer hover:-translate-y-0.5 hover:bg-gray-200 transition duration-200 inline-block text-center";
 
   const variantStyles = {
     primary:
@@ -264,13 +262,15 @@ export const NavbarButton = ({
       "bg-gradient-to-b from-blue-500 to-blue-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]",
   };
 
-  return (
-    <Tag
-      href={href || undefined}
-      className={cn(baseStyles, variantStyles[variant], className)}
-      {...props}
-    >
-      {children}
-    </Tag>
+  const componentProps = {
+    href: href || undefined,
+    className: cn(baseStyles, variantStyles[variant], className),
+    ...props
+  };
+  
+  return React.createElement(
+    Tag,
+    componentProps,
+    children
   );
 };

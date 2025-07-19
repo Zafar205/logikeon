@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import MainNavbar from "./components/others/main-navbar";
 import HeroText from "./components/others/hero-text";
 import { CanvasRevealEffectDemo } from "./components/ui/canvas-reveal";
+import { TimelineDemo } from "./components/ui/timeline";
 
 
 // Dynamically import the WorldGlobe component with SSR disabled
@@ -39,6 +40,21 @@ export default function Home() {
         {/* Canvas Reveal Effect Section */}
         <section className="w-full">
           <CanvasRevealEffectDemo />
+        </section>
+
+        {/* Portfolio Timeline Section */}
+        <section className="w-full py-20 relative">
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+                Our Journey
+              </h2>
+              <p className="text-lg text-neutral-300 max-w-2xl mx-auto">
+                A timeline of our professional growth, projects, and achievements in web development
+              </p>
+            </div>
+            <TimelineDemo />
+          </div>
         </section>
       </main>
 

@@ -211,7 +211,7 @@ const globeConfig = {
 
 export function WorldGlobe() {
   return (
-    <div className="flex flex-row items-center justify-center h-full w-full bg-transparent relative">
+    <div className="flex flex-row items-center justify-center h-full w-full bg-transparent relative -translate-y-8 lg:-translate-y-12">
       <div className="w-full relative overflow-hidden h-[50vh] lg:h-full">
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent to-black z-40" />
         <div className="absolute w-full h-full z-10">

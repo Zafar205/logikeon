@@ -3,6 +3,8 @@
 import dynamic from "next/dynamic";
 import MainNavbar from "./components/others/main-navbar";
 import HeroText from "./components/others/hero-text";
+import { CanvasRevealEffectDemo } from "./components/ui/canvas-reveal";
+
 
 // Dynamically import the WorldGlobe component with SSR disabled
 const WorldGlobe = dynamic(() => import("./components/ui/world").then((mod) => ({ default: mod.WorldGlobe })), {
@@ -33,7 +35,14 @@ export default function Home() {
             <WorldGlobe />
           </div>
         </div>
+        
+        {/* Canvas Reveal Effect Section */}
+        <section className="w-full">
+          <CanvasRevealEffectDemo />
+        </section>
       </main>
+
+
     </>
   );
 }

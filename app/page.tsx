@@ -5,6 +5,7 @@ import MainNavbar from "./components/others/main-navbar";
 import HeroText from "./components/others/hero-text";
 import { CanvasRevealEffectDemo } from "./components/ui/canvas-reveal";
 import { TimelineDemo } from "./components/ui/timeline";
+import { WorldMapDemo } from "./components/ui/mapworld-comp";
 
 
 // Dynamically import the WorldGlobe component with SSR disabled
@@ -55,6 +56,11 @@ export default function Home() {
             </div>
             <TimelineDemo />
           </div>
+        </section>
+
+        {/* World Map Section */}
+        <section className="w-full relative">
+          <WorldMapDemo />
         </section>
       </main>
 

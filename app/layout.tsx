@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Logikeon",
   description: "Convert your idea into reality.",
+  openGraph: {
+    images : [
+      "/openGraph.png"
+    ]
+  }
 };
 
 export default function RootLayout({

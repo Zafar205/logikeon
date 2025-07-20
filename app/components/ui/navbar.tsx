@@ -9,6 +9,7 @@ import {
 } from "motion/react";
 
 import React, { useRef, useState } from "react";
+import Image from "next/image";
 
 
 interface NavbarProps {
@@ -225,10 +226,13 @@ export const NavbarLogo = () => {
       href="#"
       className="relative z-20 mr-4 flex items-center px-2 h-full"
     >
-      <img
+      <Image
         src="/logikeon_no_back.png"
         alt="Logikeon"
+        width={128}
+        height={32}
         className="h-32 w-auto object-contain"
+        priority
       />
     </a>
   );

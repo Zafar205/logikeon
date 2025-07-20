@@ -4,11 +4,6 @@ export default function ContactUs() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
 
-  interface ContactForm {
-    name: string;
-    email: string;
-    message: string;
-  }
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
     setForm({ ...form, [e.target.name]: e.target.value });

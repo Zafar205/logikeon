@@ -1,10 +1,10 @@
 import React from "react";
-
+import Image from "next/image"
 const Footer: React.FC = () => (
   <footer className="w-full bg-gradient-to-r from-blue-900 via-blue-800 to-cyan-900 text-neutral-200 py-10 border-t border-cyan-700 mt-10">
     <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
       <div className="flex items-center space-x-3 mb-4 md:mb-0">
-        <img src="/logikeon_no_back.png" alt="Logikeon Logo" className="h-10 w-10 rounded-full shadow-lg" />
+          <Image src="/logikeon_no_back.png" alt="Logikeon Logo" className="h-10 w-10 rounded-full shadow-lg" />
         <span className="font-bold text-xl tracking-wide text-cyan-300">Logikeon</span>
       </div>
       <div className="text-center md:text-right text-sm">

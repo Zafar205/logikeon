@@ -10,7 +10,7 @@ import {
   MobileNavMenu, 
   MobileNavToggle, 
   NavbarLogo, 
-  NavbarButton 
+  // Removed unused NavbarButton
 } from "../ui/navbar";
 
 interface MainNavbarProps {

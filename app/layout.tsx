@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Logikeon - Interactive Globe",
-  description: "Experience the world through an interactive 3D globe",
+  title: "Logikeon",
+  description: "Convert your idea into reality.",
 };
 
 export default function RootLayout({

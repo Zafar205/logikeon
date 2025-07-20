@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import MainNavbar from "./components/others/main-navbar";
+import ContactUs from "./components/others/contact-us";
 import HeroText from "./components/others/hero-text";
 import { CanvasRevealEffectDemo } from "./components/ui/canvas-reveal";
 import { TimelineDemo } from "./components/ui/timeline";
@@ -81,8 +82,20 @@ export default function Home() {
           </div>
         </section>
         
+        {/* Contact Us Section - Space themed, animated */}
+        <section className="w-full relative py-20">
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Contact Us</h2>
+              <p className="text-lg text-neutral-300 max-w-2xl mx-auto">We'd love to hear from you! Reach out for cosmic collaborations or stellar support.</p>
+            </div>
+            <div className="flex justify-center">
+              {/* Animated ContactUs component */}
+              <ContactUs />
+            </div>
+          </div>
+        </section>
       </main>
-
 
     </>
   );

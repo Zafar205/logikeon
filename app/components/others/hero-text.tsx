@@ -18,10 +18,10 @@ export default function HeroText({ className }: HeroTextProps) {
         
         {/* Get Started Button */}
         <div className="flex justify-center lg:justify-start ml-8 lg:ml-12 mt-6 lg:mt-8">
-          <button className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-white rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/25" style={{background: 'linear-gradient(to right, #06b6d4, #000B42)'}}>
+          <a href="#contact-us" className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-white rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/25" style={{background: 'linear-gradient(to right, #06b6d4, #000B42)'}}>
             <span className="relative z-10">Get Started</span>
             <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" style={{background: 'linear-gradient(to right, #0891b2, #000B42)'}}></div>
-          </button>
+          </a>
         </div>
       </div>
     </div>

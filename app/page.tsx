@@ -8,6 +8,7 @@ import { CanvasRevealEffectDemo } from "./components/ui/canvas-reveal";
 import { TimelineDemo } from "./components/ui/timeline";
 import { WorldMapDemo } from "./components/ui/mapworld-comp";
 import { FeaturesSectionDemo } from "./components/ui/features";
+import Footer from "./components/others/footer";
 
 
 // Dynamically import the WorldGlobe component with SSR disabled
@@ -33,22 +34,22 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row min-h-screen">
           {/* Text Content - Left side on desktop, top on mobile */}
           <HeroText />
-          
+
           {/* Globe - Right side on desktop, bottom on mobile */}
           <div className="flex-1 relative lg:pt-0 -mt-6 lg:-mt-8">
             <WorldGlobe />
           </div>
         </div>
-        
+
         {/* Canvas Reveal Effect Section */}
-        <section className="w-full">
+        <section className="w-full" id="services">
           <CanvasRevealEffectDemo />
         </section>
 
 
 
         {/* Portfolio Timeline Section */}
-        <section className="w-full py-20 relative">
+        <section className="w-full py-20 relative" id="about">
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
@@ -67,7 +68,7 @@ export default function Home() {
           <WorldMapDemo />
         </section>
 
-                {/* Features Section */}
+        {/* Features Section */}
         <section className="w-full relative py-20">
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-16">
@@ -81,9 +82,9 @@ export default function Home() {
             <FeaturesSectionDemo />
           </div>
         </section>
-        
+
         {/* Contact Us Section - Space themed, animated */}
-        <section className="w-full relative py-20">
+        <section id="contact-us" className="w-full relative py-20">
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Contact Us</h2>
@@ -96,6 +97,10 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      <section id="footer">
+        <Footer />
+      </section>
 
     </>
   );

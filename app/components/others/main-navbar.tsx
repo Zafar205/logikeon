@@ -24,7 +24,7 @@ export default function MainNavbar({ className }: MainNavbarProps) {
     { name: "Home", link: "#" },
     { name: "About", link: "#about" },
     { name: "Services", link: "#services" },
-    { name: "Contact", link: "#contact" },
+    { name: "Contact", link: "#contact-us" },
   ];
 
   return (

@@ -1,13 +1,43 @@
 "use client";
-
 import dynamic from "next/dynamic";
 import MainNavbar from "./components/others/main-navbar";
 import ContactUs from "./components/others/contact-us";
 import HeroText from "./components/others/hero-text";
-import { CanvasRevealEffectDemo } from "./components/ui/canvas-reveal";
-import { TimelineDemo } from "./components/ui/timeline";
-import { WorldMapDemo } from "./components/ui/mapworld-comp";
-import { FeaturesSectionDemo } from "./components/ui/features";
+const CanvasRevealEffectDemo = dynamic(() => import("./components/ui/canvas-reveal").then(mod => ({ default: mod.CanvasRevealEffectDemo })), {
+  ssr: false,
+  loading: () => (
+    <div className="flex items-center justify-center py-10">
+      <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-cyan-500"></div>
+    </div>
+  ),
+});
+
+const TimelineDemo = dynamic(() => import("./components/ui/timeline").then(mod => ({ default: mod.TimelineDemo })), {
+  ssr: false,
+  loading: () => (
+    <div className="flex items-center justify-center py-10">
+      <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-cyan-500"></div>
+    </div>
+  ),
+});
+
+const WorldMapDemo = dynamic(() => import("./components/ui/mapworld-comp").then(mod => ({ default: mod.WorldMapDemo })), {
+  ssr: false,
+  loading: () => (
+    <div className="flex items-center justify-center py-10">
+      <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-cyan-500"></div>
+    </div>
+  ),
+});
+
+const FeaturesSectionDemo = dynamic(() => import("./components/ui/features").then(mod => ({ default: mod.FeaturesSectionDemo })), {
+  ssr: false,
+  loading: () => (
+    <div className="flex items-center justify-center py-10">
+      <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-cyan-500"></div>
+    </div>
+  ),
+});
 import Footer from "./components/others/footer";
 
 

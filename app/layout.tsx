@@ -19,11 +19,12 @@ export const metadata: Metadata = {
   keywords: [
     "Logikeon", "logikeon", "Logikon", "logikon", "digital solutions", "web development", "mobile apps", "UI/UX design", "startup", "technology", "innovation"
   ],
+  metadataBase: new URL("https://logikeon.vercel.app"),
   openGraph: {
     title: "Logikeon | Convert your idea into reality",
     description: "Logikeon | Convert your idea into reality. Digital solutions, web development, mobile apps, UI/UX design, and more.",
     images: [
-      "/openGraph.png"
+      "/openGraph.webp"
     ]
   },
   twitter: {

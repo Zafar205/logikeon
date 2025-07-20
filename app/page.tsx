@@ -6,6 +6,7 @@ import HeroText from "./components/others/hero-text";
 import { CanvasRevealEffectDemo } from "./components/ui/canvas-reveal";
 import { TimelineDemo } from "./components/ui/timeline";
 import { WorldMapDemo } from "./components/ui/mapworld-comp";
+import { FeaturesSectionDemo } from "./components/ui/features";
 
 
 // Dynamically import the WorldGlobe component with SSR disabled
@@ -43,6 +44,8 @@ export default function Home() {
           <CanvasRevealEffectDemo />
         </section>
 
+
+
         {/* Portfolio Timeline Section */}
         <section className="w-full py-20 relative">
           <div className="max-w-7xl mx-auto px-4">
@@ -61,6 +64,21 @@ export default function Home() {
         {/* World Map Section */}
         <section className="w-full relative">
           <WorldMapDemo />
+        </section>
+
+                {/* Features Section */}
+        <section className="w-full relative py-20">
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+                Why Choose Logikeon
+              </h2>
+              <p className="text-lg text-neutral-300 max-w-2xl mx-auto">
+                Cutting-edge technology solutions with interactive experiences that bring your digital vision to life
+              </p>
+            </div>
+            <FeaturesSectionDemo />
+          </div>
         </section>
       </main>
 

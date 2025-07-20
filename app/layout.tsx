@@ -14,10 +14,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Logikeon",
-  description: "Convert your idea into reality.",
+  title: "Logikeon | Convert your idea into reality",
+  description: "Logikeon - Convert your idea into reality. Digital solutions, web development, mobile apps, UI/UX design, and more.",
+  keywords: [
+    "Logikeon", "logikeon", "Logikon", "logikon", "digital solutions", "web development", "mobile apps", "UI/UX design", "startup", "technology", "innovation"
+  ],
   openGraph: {
-    images : [
+    title: "Logikeon | Convert your idea into reality",
+    description: "Logikeon | Convert your idea into reality. Digital solutions, web development, mobile apps, UI/UX design, and more.",
+    images: [
+      "/openGraph.png"
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Logikeon | Convert your idea into reality",
+    description: "Logikeon- Convert your idea into reality. Digital solutions, web development, mobile apps, UI/UX design, and more.",
+    images: [
       "/openGraph.png"
     ]
   }

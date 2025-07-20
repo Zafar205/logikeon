@@ -80,6 +80,7 @@ export default function Home() {
             <FeaturesSectionDemo />
           </div>
         </section>
+        
       </main>
 
 

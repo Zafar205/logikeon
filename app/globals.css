@@ -6,3 +6,14 @@
   --color-primary-500: oklch(0.84 0.18 117.33);
   --spacing: 0.25rem;
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
